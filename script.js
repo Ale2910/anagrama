@@ -8,6 +8,12 @@ const elements = {
     difficulty: window.document.getElementsByName('difficulty') // radios
 }
 
+/*
+elements.difficulty[0].onchange = congrats.innerHTML = ''
+elements.difficulty[1].onchange = congrats.innerHTML = ''
+elements.difficulty[2].onchange = congrats.innerHTML = ''
+*/
+
 
 // Anagrama
 
@@ -123,7 +129,7 @@ function verify () {
     } else if (txt.length === 0) {
         window.alert('Mas você nem digitou nada!')
 
-    } else if( typeof(Number(txt)) === 'number' || String(Number(txt)).includes(NaN) ){
+    } else if(hasNum(txt)){
         window.alert('Sua palavra não pode ser um número!')
 
     } else if (txt.length < realWord.length) {
@@ -141,4 +147,21 @@ function verify () {
          Parabéns, você acertou!!! A palavra é <strong>${realWord}</strong>`
     }
     
+}
+
+
+
+function hasNum(str) {
+
+    // Laço que vai verificar
+    for(let i = 0; i < 10; i++) {
+
+        // Se tiver algum número
+        if(str.includes(i)) {
+            return true
+        }
+    }
+
+    // Se não tiver
+    return false
 }
