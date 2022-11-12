@@ -141,7 +141,7 @@ function verify () {
     } else if (txt !== realWord){
         window.alert('A palavra não é essa :/')
 
-    } else if (txt == realWord) {
+    } else if (toLowerCase(txt).trim() == realWord) {
 
         congrats.innerHTML = ` <br>
          Parabéns, você acertou!!! A palavra é <strong>${realWord}</strong>`
