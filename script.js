@@ -130,7 +130,7 @@ function verify () {
         window.alert('Mas você nem digitou nada!')
 
     } else if(hasNum(txt)){
-        window.alert('Sua palavra não pode ser um número!')
+        window.alert('Sua palavra não pode ser/ter um número!')
 
     } else if (txt.length < realWord.length) {
         window.alert(`Sua palavra é pequena demais! Essa palavra tem ${txt.length} letra(s).`)
