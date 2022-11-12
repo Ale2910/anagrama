@@ -161,7 +161,7 @@ function hasNum(str) {
             return true
         }
     }
-
+ 
     // Se não tiver
     return false
 }
