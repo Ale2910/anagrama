@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagrama</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Anagrama</h1>
+    </header>
+
+    <section>
+
+        <!-- Aqui é onde a pessoa irá gerar a palavra -->
+        <div>
+            Palavra: <br>
+            <strong><word id="word"> (esperando gerar) </word></strong> <br>
+            
+            <input type="button" value="Gerar" onclick="anagrama()">
+        </div>
+        <br>
+
+        <!-- Radios sobre dificuldades -->
+        <div>
+            <input type="radio" name="difficulty" checked>
+            <label for="difficulty">Fácil</label>
+            <br>
+            <input type="radio" name="difficulty">
+            <label for="difficulty">Médio</label>
+            <br>
+            <input type="radio" name="difficulty">
+            <label for="difficulty">Difícil</label>
+        </div>
+        <br>
+
+        <!-- Aqui é onde a pessoa verifica a palavra -->
+        <div>
+            Adivinhe a palavra: <br>
+            <input type="text" id="verify">
+
+            <input type="button" value="Verificar" onclick="verify()">
+            <br>
+
+            <congrats id="congrats"></congrats>
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer :D</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
